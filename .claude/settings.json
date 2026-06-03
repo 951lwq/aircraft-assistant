@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(python -m src.ingest)",
+      "Bash(python -m src.cli)",
+      "Bash(python -c ' *)",
+      "Bash(ls \"C:/Users/hp/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/\" 2>/dev/null || echo \"NOT FOUND\")",
+      "Read(//c/Users/hp/.cache/huggingface/hub/models--BAAI--bge-small-zh-v1.5/**)",
+      "Bash(python -c \"import streamlit; print\\(f'Streamlit {streamlit.__version__}'\\)\")",
+      "Bash(python -c \"import py_compile; py_compile.compile\\('src/app.py', doraise=True\\); print\\('OK'\\)\")"
+    ]
+  }
+}
